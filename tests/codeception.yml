@@ -1,0 +1,33 @@
+paths:
+  tests: .
+  log: _log
+  data: _data
+  helpers: _support
+  include:
+    - src/*
+  exclude:
+    - db/*
+    - docs/*
+    - package/*
+    - tests/*
+    - vendor/*
+settings:
+  bootstrap: _bootstrap.php
+  colors: true
+  memory_limit: 1024M
+  log: true
+modules:
+  config:
+    Db:
+      dsn: 'mysql:dbname=EMSTS1;host=localhost'
+      user: 'emssvc'
+      password: 'vQq4vWWEq737'
+      dump: tests/_data/dump.sql
+#    Phalcon1:
+#      bootstrap: Config/bootstrap.php
+#      cleanup: false
+#      savepoints: true
+coverage:
+  enabled: true
+  include:
+    - src/*
