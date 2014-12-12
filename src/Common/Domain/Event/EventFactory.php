@@ -18,7 +18,7 @@
  * $LastChangedBy$
  */
 
-namespace Common\Domain\Events;
+namespace Common\Domain\Event;
 
 use Common\Domain\Factory\FactoryInterface;
 
@@ -46,6 +46,6 @@ class EventFactory implements FactoryInterface
      */
     public function create()
     {
-        // TODO: Implement create() method.
+        return new Event();
     }
 }

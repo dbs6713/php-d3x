@@ -4,15 +4,40 @@ use Codeception\Util\Autoload;
 define('SRC_DIR', '../src');
 define('COMMON_DIR', '../src/Common');
 define('DOMAIN_DIR', '../src/Common/Domain');
+define('EVENT_DIR', '../src/Common/Domain/Event');
 define('FACTORY_DIR', '../src/Common/Domain/Factory');
 define('INFRASTRUCTURE_DIR', '../src/Common/Infrastructure');
 define('DATAGATEWAY_DIR', '../src/Common/Infrastructure/DataGateway');
 define('PERSISTENCE_DIR', '../src/Common/Infrastructure/DataGateway/Persistence');
 
 Autoload::register(
+    'Common\\Domain',
+    'DomainEntityInterface',
+    DOMAIN_DIR
+);
+
+Autoload::register(
+    'Common\\Domain',
+    'DomainValueObjectInterface',
+    DOMAIN_DIR
+);
+
+Autoload::register(
     'Common\\Domain\\Factory',
     'FactoryInterface',
     FACTORY_DIR
+);
+
+Autoload::register(
+    'Common\\Domain\\Event',
+    'EventFactory',
+    EVENT_DIR
+);
+
+Autoload::register(
+    'Common\\Domain\\Event',
+    'Event',
+    EVENT_DIR
 );
 
 AutoLoad::register(

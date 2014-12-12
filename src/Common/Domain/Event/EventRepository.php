@@ -18,7 +18,7 @@
  * $LastChangedBy$
  */
 
-namespace Common\Domain\Events;
+namespace Common\Domain\Event;
 
 use Common\Domain\Repository\RepositoryInterface;
 use Common\Domain\Repository\AbstractRepository;

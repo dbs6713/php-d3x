@@ -18,9 +18,9 @@
  * $LastChangedBy$
  */
 
-namespace Common\Domain\Events;
+namespace Common\Domain\Event;
 
-use Common\Domain\DomainInterface;
+use Common\Domain\DomainEntityInterface;
 
 
 /**
@@ -34,7 +34,7 @@ use Common\Domain\DomainInterface;
  * @version   Release: 0.1
  * @link      https:/ems.ldschurch.org
  */
-class Event implements DomainInterface
+class Event implements DomainEntityInterface
 {
 
 }
