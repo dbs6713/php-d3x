@@ -95,4 +95,38 @@ class DataGatewayFactoryTest extends Test
 
         $this->assertEquals(0, $persistence->count());
     }
+
+    public function testDataGatewayFactorySqlLiteFile()
+    {
+        $data1    = ['data1'];
+        $data2    = ['data2'];
+        $expected = [$data1, $data2];
+
+        $persistence = $this->_harness->createSqlLiteFilePersistence();
+
+        $this->assertInstanceOf(
+            'Common\Infrastructure\DataGateway\Persistence\PersistenceInterface',
+            $persistence
+        );
+
+        $this->assertTrue($persistence->persist($data1));
+
+        $this->assertTrue($persistence->persist($data2));
+
+        $this->assertEquals(2, $persistence->count());
+
+        $this->assertEquals($data1, $persistence->retrieve(1));
+
+        $this->assertEquals($data2, $persistence->retrieve(2));
+
+        $this->assertEquals($expected, $persistence->retrieveAll());
+
+        $this->assertTrue($persistence->delete(1));
+
+        $this->assertEquals(1, $persistence->count());
+
+        $this->assertTrue($persistence->deleteAll());
+
+        $this->assertEquals(0, $persistence->count());
+    }
 }

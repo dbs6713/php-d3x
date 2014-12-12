@@ -63,7 +63,7 @@ class DataGatewayFactory implements FactoryInterface
     }
 
     /**
-     * Function createSqlLitePersistence
+     * Function createSqlLiteMemoryPersistence
      *
      * @return \Common\Infrastructure\DataGateway\Persistence\Sqlite
      *
@@ -71,11 +71,45 @@ class DataGatewayFactory implements FactoryInterface
      */
     public function createSqlLiteMemoryPersistence()
     {
-        $driver = 'sqlite::memory:';
+        try {
+            $driver = 'sqlite::memory:';
 
-        $pdo = new PDO($driver);
+            $pdo = new PDO($driver);
 
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (\Exception $e) {
+            throw new \PDOException(
+                __METHOD__.
+                ': ('.$e->getCode().') '.
+                $e->getMessage()
+            );
+        }
+
+        return new Sqlite($pdo);
+    }
+
+    /**
+     * Function createSqlLiteFilePersistence
+     *
+     * @return \Common\Infrastructure\DataGateway\Persistence\Sqlite
+     *
+     * @access public
+     */
+    public function createSqlLiteFilePersistence()
+    {
+        try {
+            $driver = 'sqlite:../db/d3x-tst.sqlite';
+
+            $pdo = new PDO($driver);
+
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (\Exception $e) {
+            throw new \PDOException(
+                __METHOD__.
+                ': ('.$e->getCode().') '.
+                $e->getMessage()
+            );
+        }
 
         return new Sqlite($pdo);
     }
