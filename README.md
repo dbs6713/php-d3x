@@ -1,5 +1,7 @@
 # D3X
 
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/code-ninja-io/d3x?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 **Modern Domain Driven Design for PHPer's**
 
  [![Stories in Ready](https://badge.waffle.io/code-ninja-io/d3x.png?label=ready&title=Ready)](https://waffle.io/code-ninja-io/d3x)
