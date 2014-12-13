@@ -103,7 +103,7 @@ class DataGatewayFactoryTest extends Test
        $expected = [$data1, $data2];
 
        $persistence = $this->_harness->createSqlLiteFilePersistence(
-          '/Users/stringhamdb/Sandbox/d3x/db/d3x-tst.sqlite'
+           __DIR__.'/../../../_data/d3x-tst.sqlite'
        );
 
        $this->assertInstanceOf(

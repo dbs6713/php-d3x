@@ -91,11 +91,11 @@ class DataGatewayFactory implements FactoryInterface
     /**
      * Function createSqlLiteFilePersistence
      *
-     * @param string $dir Directory where the SQLite file should be created.
+     * @param string $filePath
      *
      * @return \Common\Infrastructure\DataGateway\Persistence\Sqlite
      *
-     * @access public
+     * @access   public
      */
     public function createSqlLiteFilePersistence($filePath = 'd3x.sqlite')
     {
