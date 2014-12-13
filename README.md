@@ -1,12 +1,12 @@
 # D3X
 
-**Modern Domain Driven Design for PHPer's** 
+**Modern Domain Driven Design for PHPer's**
+
+ [![Stories in Ready](https://badge.waffle.io/code-ninja-io/d3x.png?label=ready&title=Ready)](https://waffle.io/code-ninja-io/d3x)
+ [![Build Status](https://travis-ci.org/code-ninja-io/d3x.svg)](https://travis-ci.org/code-ninja-io/d3x)
 
 D3X is a Domain Driven Design experiment in PHP.  The whole idea being to give an initial seed and footprint for a
 basic DDD project implemented in PHP.
-
-[![Stories in Ready](https://badge.waffle.io/code-ninja-io/d3x.png?label=ready&title=Ready)](https://waffle.io/code-ninja-io/d3x)
-[![Build Status](https://travis-ci.org/code-ninja-io/d3x.svg)](https://travis-ci.org/code-ninja-io/d3x)
 
 ##### Code
 
