@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c598f523d0299353a98e36660775561d",
+    "hash": "f3b134c49f519362de2d2912b6b0b6e9",
     "packages": [],
     "packages-dev": [
         {
@@ -1494,10 +1494,6 @@
         "phalcon/devtools": 20
     },
     "prefer-stable": false,
-    "platform": {
-        "php": ">=5.6.0",
-        "ext-json": "*",
-        "ext-mbstring": "*"
-    },
+    "platform": [],
     "platform-dev": []
 }
