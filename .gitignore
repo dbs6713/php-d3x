@@ -4,7 +4,10 @@ Dockerfile
 composer.phar
 vendor
 db/*.sqlite
+<<<<<<< HEAD
 
 composer.json
 
 *.lock
+=======
+>>>>>>> develop
