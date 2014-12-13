@@ -1,14 +1,13 @@
 paths:
-  tests: .
-  log: _log
-  data: _data
-  helpers: _support
+  tests: tests
+  log: tests/_log
+  data: tests/_data
+  helpers: tests/_support
   include:
     - src/*
   exclude:
     - db/*
     - docs/*
-    - package/*
     - tests/*
     - vendor/*
 settings:

@@ -1,14 +1,15 @@
 <?php
 use Codeception\Util\Autoload;
 
-define('SRC_DIR', '../src');
-define('COMMON_DIR', '../src/Common');
-define('DOMAIN_DIR', '../src/Common/Domain');
-define('EVENT_DIR', '../src/Common/Domain/Event');
-define('FACTORY_DIR', '../src/Common/Domain/Factory');
-define('INFRASTRUCTURE_DIR', '../src/Common/Infrastructure');
-define('DATAGATEWAY_DIR', '../src/Common/Infrastructure/DataGateway');
-define('PERSISTENCE_DIR', '../src/Common/Infrastructure/DataGateway/Persistence');
+
+define('SRC_DIR', 'src');
+define('COMMON_DIR', 'src/Common');
+define('DOMAIN_DIR', 'src/Common/Domain');
+define('EVENT_DIR', 'src/Common/Domain/Event');
+define('FACTORY_DIR', 'src/Common/Domain/Factory');
+define('INFRASTRUCTURE_DIR', 'src/Common/Infrastructure');
+define('DATAGATEWAY_DIR', 'src/Common/Infrastructure/DataGateway');
+define('PERSISTENCE_DIR', 'src/Common/Infrastructure/DataGateway/Persistence');
 
 Autoload::register(
     'Common\\Domain',
