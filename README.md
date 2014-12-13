@@ -1,4 +1,4 @@
-# D3X [![Latest Stable](https://poser.pugx.org/Codeception/Codeception/version.png)](https://packagist.org/packages/Codeception/Codeception) [![Total Downloads](https://poser.pugx.org/codeception/codeception/downloads.png)](https://packagist.org/packages/codeception/codeception) [![Stories in Ready](https://badge.waffle.io/stringhamdb/d3x.png?label=ready&title=Ready)](https://waffle.io/stringhamdb/d3x)
+# D3X [![Latest Stable](https://poser.pugx.org/Codeception/Codeception/version.png)](https://packagist.org/packages/Codeception/Codeception) [![Total Downloads](https://poser.pugx.org/codeception/codeception/downloads.png)](https://packagist.org/packages/codeception/codeception) [![Stories in Ready](https://badge.waffle.io/code-ninja-io/d3x.png?label=ready&title=Ready)](https://waffle.io/code-ninja-io/d3x)
 
 **Modern Domain Driven Design for PHPer's** 
 
