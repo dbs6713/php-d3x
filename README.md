@@ -42,4 +42,4 @@ Read Also [Installation](http://stringhamdb.github.io/install) | **[QuickStart](
 ### License
 MIT
 
-Don B. Stringham "CodeNinja{Don}" © 2014
+Don B. Stringham "code-ninja{io}" © 2014
