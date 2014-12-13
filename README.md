@@ -13,8 +13,6 @@ basic DDD project implemented in PHP.
 **Bugfixes should be sent to to current stable branch, which is the same as major version number.**
 Breaking features and major improvements should be sent into `master`. When you send PRs to master, they will be added to release cycle only when the next stable branch is started.
 
-Check also the "tests/README.md" to learn more about the available internal Codeception tests.
-
 ##### Documentation
 
 The documentation for each module is directly generated from the corresponding docblock which can be found in each module (src/Common/*).
