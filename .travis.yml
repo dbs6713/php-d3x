@@ -16,4 +16,4 @@ script:
   - ./vendor/bin/codecept run
 
 notifications:
-  slack: codeplex:mLURPasP3TW0YOAz2oolncac
+  slack: code-ninja-io:uSrXFfUaMNvRj3I8tQHWDH1j
