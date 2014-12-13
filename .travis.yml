@@ -10,7 +10,6 @@ branches:
 before_script:
   - composer install -n --prefer-source
   - ./vendor/bin/codecept build
-  - chmod -R 777 ./db
 
 script:
   - ./vendor/bin/codecept run
