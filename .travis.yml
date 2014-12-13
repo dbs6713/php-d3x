@@ -10,7 +10,7 @@ branches:
 before_script:
   - composer install -n --prefer-source
   - ./vendor/bin/codecept build
-  - chmod 777 ./db/d3x-tst.sqlite
+  - chmod -R o+w ./db
 
 script:
   - ./vendor/bin/codecept run
