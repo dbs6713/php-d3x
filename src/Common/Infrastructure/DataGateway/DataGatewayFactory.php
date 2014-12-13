@@ -91,14 +91,17 @@ class DataGatewayFactory implements FactoryInterface
     /**
      * Function createSqlLiteFilePersistence
      *
+     * @param string $dir Directory where the SQLite file should be created.
+     *
      * @return \Common\Infrastructure\DataGateway\Persistence\Sqlite
      *
      * @access public
      */
-    public function createSqlLiteFilePersistence()
+    public function createSqlLiteFilePersistence($filePath = 'd3x.sqlite')
     {
+
         try {
-            $driver = 'sqlite:../db/d3x-tst.sqlite';
+            $driver = 'sqlite:'.$filePath;
 
             $pdo = new PDO($driver);
 
