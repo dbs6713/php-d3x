@@ -1,13 +1,13 @@
 <?php
 /**
- * File name: EventRepository.php
+ * File name: IncidentRepository.php
  *
  * Project: d3x
  *
  * PHP version 5
  *
  * @category  PHP
- * @package   Common\Domain\Events
+ * @package   Common\Domain\Incident
  * @author    stringhamdb <stringhamdb@familysearch.org>
  * @copyright 2014 © Intellectual Reserve, Inc.
  * @license   Trademarked by Intellectual Reserve, Inc.
@@ -18,24 +18,23 @@
  * $LastChangedBy$
  */
 
-namespace Common\Domain\Event;
+namespace Common\Domain\Incident;
 
 use Common\Domain\Repository\RepositoryInterface;
 use Common\Domain\Repository\AbstractRepository;
 
-
 /**
- * Class EventRepository
+ * Class IncidentRepository
  *
  * @category  PHP
- * @package   Common\Domain\Events
+ * @package   Common\Domain\Incident
  * @author    stringhamdb <stringhamdb@familysearch.org>
  * @copyright 2014 © Intellectual Reserve, Inc.
  * @license   Trademarked by Intellectual Reserve, Inc.
  * @version   Release: 0.1
  * @link      https:/ems.ldschurch.org
  */
-class EventRepository extends AbstractRepository implements RepositoryInterface
+class IncidentRepository extends AbstractRepository implements RepositoryInterface
 {
 
     /**
