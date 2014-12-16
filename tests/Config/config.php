@@ -32,18 +32,20 @@ $config = [
             'Common\\Infrastructure\\DataGateway\\Persistence\\PersistenceInterface' => $project_dir.'/src/Common/Infrastructure/DataGateway/Persistence/PersistenceInterface.php',
             'Common\\Infrastructure\\DataGateway\\Persistence\\InMemory'             => $project_dir.'/src/Common/Infrastructure/DataGateway/Persistence/InMemory.php',
             'Common\\Infrastructure\\DataGateway\\Persistence\\Sqlite'               => $project_dir.'/src/Common/Infrastructure/DataGateway/Persistence/Sqlite.php',
+            'Common\\Infrastructure\\DataGateway\\Persistence\\TableDataGateway'     => $project_dir.'/src/Common/Infrastructure/DataGateway/Persistence/TableDataGateway.php',
         ]
     ],
     'databases' => [
         'default' => [
-            'adapter'   => 'mysql',
+            'adapter'   => 'sqlite',
             'host'      => 'localhost',
-            'username'  => 'emssvc',
-            'password'  => 'vQq4vWWEq737',
-            'dbname'    => 'EMSDV1'
+            'username'  => '',
+            'password'  => '',
+            'dbname'    => 'main',
+            'file'      => $project_dir.'db/d3x-dv1.sqlite'
         ],
         'backup' => [
-            'adapter'   => 'sqlite',
+            'adapter'   => 'Mysql',
             'host'      => 'localhost',
             'username'  => 'emssvc',
             'password'  => 'vQq4vWWEq737',
