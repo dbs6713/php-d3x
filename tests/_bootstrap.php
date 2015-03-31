@@ -1,7 +1,11 @@
 <?php
 
-require 'Config/autoloader.php';
-require 'Config/config.php';
+$autoloader = realpath(
+    __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'vendor'.
+    DIRECTORY_SEPARATOR.'autoload.php'
+);
 
-$autoloader = new Autoloader($config['application']['classes']);
-$autoloader->register();
+/** @noinspection PhpIncludeInspection */
+require_once $autoloader;
+require_once 'Config/config.php';
+require_once 'Config/services.php';

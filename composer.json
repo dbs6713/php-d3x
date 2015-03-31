@@ -1,16 +1,27 @@
 {
-  "name": "code-ninja-io/d3x",
+  "name": "donbstringham/d3x",
   "description": "Domain Driven Design PHP Experiment ",
   "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
     {
       "name": "Don B. Stringham",
-      "email": "don@code-ninja.io"
+      "email": "donbstringham@gmail.com"
     }
   ],
   "require-dev": {
     "codeception/codeception": "2.0.*",
     "phalcon/devtools": "1.3.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Common\\Domain\\": "src/Common/",
+      "Common\\Domain\\Event\\": "src/Common/Event/",
+      "Common\\Domain\\Factory\\": "src/Common/Factory/",
+      "Common\\Domain\\Incident\\": "src/Common/Event/Incident/",
+      "Common\\Domain\\Repository\\": "src/Common/Repository/",
+      "Common\\Infrastructure\\DataGateway\\": "src/Common/Infrastructure/DataGateway/",
+      "Common\\Infrastructure\\DataGateway\\Persistence\\": "src/Common/Infrastructure/DataGateway/Persistence/"
+    }
   }
 }

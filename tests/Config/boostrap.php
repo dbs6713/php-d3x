@@ -26,11 +26,6 @@ $di = new \Phalcon\DI\FactoryDefault();
 $di->set('config', $config);
 
 /**
- * Read the auto-loader
- */
-include __DIR__.DIRECTORY_SEPARATOR.'autoloader.php';
-
-/**
  * Read the services
  */
 include __DIR__.DIRECTORY_SEPARATOR.'services.php';

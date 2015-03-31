@@ -22,10 +22,6 @@ modules:
       user: 'emssvc'
       password: 'vQq4vWWEq737'
       dump: tests/_data/dump.sql
-#    Phalcon1:
-#      bootstrap: Config/bootstrap.php
-#      cleanup: false
-#      savepoints: true
 coverage:
   enabled: true
   include:
