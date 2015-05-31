@@ -15,13 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Common\\Domain\\": "src/Common/",
-      "Common\\Domain\\Event\\": "src/Common/Event/",
-      "Common\\Domain\\Factory\\": "src/Common/Factory/",
-      "Common\\Domain\\Incident\\": "src/Common/Event/Incident/",
-      "Common\\Domain\\Repository\\": "src/Common/Repository/",
-      "Common\\Infrastructure\\DataGateway\\": "src/Common/Infrastructure/DataGateway/",
-      "Common\\Infrastructure\\DataGateway\\Persistence\\": "src/Common/Infrastructure/DataGateway/Persistence/"
+      "Common\\": "src/Common/"
     }
   }
 }

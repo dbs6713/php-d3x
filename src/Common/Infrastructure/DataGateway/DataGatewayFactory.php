@@ -20,12 +20,11 @@
 
 namespace Common\Infrastructure\DataGateway;
 
-use Common\Infrastructure\DataGateway\Persistence\TableDataGateway;
 use PDO;
 use Common\Domain\Factory\FactoryInterface;
+use Common\Infrastructure\DataGateway\Persistence\TableDataGateway;
 use Common\Infrastructure\DataGateway\Persistence\InMemory;
 use Common\Infrastructure\DataGateway\Persistence\Sqlite;
-use Symfony\Component\Console\Helper\Table;
 
 /**
  * Class DataGatewayFactory
