@@ -2,8 +2,8 @@
 
 **Modern Domain Driven Design for PHPer's**
 
- [![Stories in Ready](https://badge.waffle.io/code-ninja-io/d3x.png?label=ready&title=Ready)](https://waffle.io/code-ninja-io/d3x)
- [![Build Status](https://travis-ci.org/code-ninja-io/d3x.svg)](https://travis-ci.org/code-ninja-io/d3x)
+ [![Stories in Ready](https://badge.waffle.io/donbstringham/d3x.png?label=ready&title=Ready)](https://waffle.io/code-ninja-io/d3x)
+ [![Build Status](https://travis-ci.org/donbstringham/d3x.svg)](https://travis-ci.org/code-ninja-io/d3x)
 
 D3X is a Domain Driven Design experiment in PHP.  The whole idea being to give an initial seed and footprint for a
 basic DDD project implemented in PHP.
@@ -27,7 +27,7 @@ Run tests and see what actions were taken and what results were seen.
 ### Composer
 
 ```
-php composer.phar require "code-ninja-io/d3x:*"
+php composer.phar require "donbstringham/d3x:*"
 ```
 
 Read Also [Installation](http://stringhamdb.github.io/install) | **[QuickStart](http://stringhamdb.github.io/quickstart)**
@@ -35,4 +35,4 @@ Read Also [Installation](http://stringhamdb.github.io/install) | **[QuickStart](
 ### License
 MIT
 
-Don B. Stringham "code-ninja{io}" © 2014
+Don B. Stringham "donbstringham" © 2014
